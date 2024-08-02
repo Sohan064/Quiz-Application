@@ -1,0 +1,142 @@
+
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden; /* Clear floats */
+  border: 1px solid black;
+}
+
+.header {
+  overflow: hidden; /* Clear floats */
+  height: 70px;
+  width: 100%;
+  
+}
+
+#i1 {
+  float: left;
+  color: #4361ee;
+  font-family: Times New Roman;
+  padding-left: 8px;
+}
+
+#counter {
+  float: right;
+  color: #4361ee;
+  font-family: Times New Roman;
+}
+
+.main-content {
+  width: calc(100% - 200px); /* Adjust for sidebar width */
+  float: left;
+  height: 440px;
+}
+
+.options {
+  width: 100%;
+  margin-top: 20px; 
+}
+
+.icons {
+  width: 198px; 
+  float: right;
+  height: 568px;
+  border: 1px solid black;
+}
+
+.circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: calc(100% - 30px);
+}
+
+.circle-container > .circle {
+  width: calc(20% - 10px); /* Adjusted width for five buttons in a row */
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 13, 13);
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  background-color: red;
+}
+
+
+
+
+.last {
+  height: 127px;
+  width: calc(100% - 202px);
+  float:left;
+  position: relative; 
+  border: 1px solid black;
+  border-right: none;
+}
+
+#b4, #b5, #submit {
+  position: absolute;
+  bottom: 10px;
+}
+#b4 {
+  left: 10px;
+  height: 30px;
+  width: 150px;
+}
+#b5 {
+  left: 200px;
+  height: 30px;
+  width: 150px;
+}
+
+#submit{
+  right: 15px;
+  height: 30px;
+  width: 80px;
+}
+#b1,#b2,#b3 {
+  height: 30px;
+}
+#b1,#submit {
+  color: green;
+  border: 2px solid green; 
+}
+#b2{
+  background-color:#1d44d0;
+  color: white;
+}
+
+.answer {
+  transform: scale(2); /* Increase the size of radio buttons */
+  margin-right: 10px;
+}
+
+#option_1,
+#option_2,
+#option_3,
+#option_4 {
+  font-size: 24px; 
+  display: inline;
+}
+
+.options ul {
+  list-style: none; /* Remove bullets */
+}
+
+.questions {
+  font-size: 18px;
+  padding-left: 8px;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .last {
+    width: 100%; /* Make the "last" div take up full width on small screens */
+  }
+}
